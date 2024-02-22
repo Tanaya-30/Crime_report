@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:background="#F2ECFF">
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="46dp"
+        android:layout_y="266dp"
+        android:text="Username:"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="211dp"
+        android:layout_y="264dp"
+        android:ems="8"
+        android:id="@+id/uid"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="129dp"
+        android:layout_height="wrap_content"
+        android:layout_x="46dp"
+        android:layout_y="356dp"
+        android:text="Password:"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="208dp"
+        android:layout_y="356dp"
+        android:ems="8"
+        android:inputType="numberPassword"
+        android:id="@+id/pass"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="143dp"
+        android:layout_height="71dp"
+        android:layout_x="138dp"
+        android:layout_y="458dp"
+        android:backgroundTint="#6B087C"
+        android:onClick="admin_login"
+        android:text="Login"
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="61dp"
+        android:layout_height="58dp"
+        android:layout_x="35dp"
+        android:layout_y="558dp"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        android:onClick="back"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="177dp"
+        android:layout_height="177dp"
+        android:layout_x="118dp"
+        android:layout_y="34dp"
+        app:srcCompat="@drawable/login" />
+
+</AbsoluteLayout>
